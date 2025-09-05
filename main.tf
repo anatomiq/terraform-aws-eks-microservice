@@ -39,7 +39,7 @@ module "ssm" {
 
 module "kms" {
   source  = "terraform-aws-modules/kms/aws"
-  version = "4.0.0"
+  version = "4.1.0"
 
   for_each = var.sqs_queues
 

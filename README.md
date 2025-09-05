@@ -42,20 +42,23 @@ gh release create v1.0.0 \
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
 
-No requirements.
+| Name | Version |
+|------|---------|
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | 1.12.2 |
+| <a name="requirement_aws"></a> [aws](#requirement\_aws) | 6.6.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | n/a |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | 6.6.0 |
 
 ## Modules
 
 | Name | Source | Version |
 |------|--------|---------|
 | <a name="module_eks_pod_identity"></a> [eks\_pod\_identity](#module\_eks\_pod\_identity) | terraform-aws-modules/eks-pod-identity/aws | 2.0.0 |
-| <a name="module_kms"></a> [kms](#module\_kms) | terraform-aws-modules/kms/aws | 4.0.0 |
+| <a name="module_kms"></a> [kms](#module\_kms) | terraform-aws-modules/kms/aws | 4.1.0 |
 | <a name="module_sqs"></a> [sqs](#module\_sqs) | terraform-aws-modules/sqs/aws | 5.0.0 |
 | <a name="module_ssm"></a> [ssm](#module\_ssm) | terraform-aws-modules/ssm-parameter/aws | 1.1.2 |
 
@@ -63,10 +66,10 @@ No requirements.
 
 | Name | Type |
 |------|------|
-| [aws_cloudwatch_metric_alarm.sqs_age_of_messages](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/cloudwatch_metric_alarm) | resource |
-| [aws_cloudwatch_metric_alarm.sqs_number_of_messages](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/cloudwatch_metric_alarm) | resource |
-| [aws_caller_identity.current](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/caller_identity) | data source |
-| [aws_region.current](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/region) | data source |
+| [aws_cloudwatch_metric_alarm.sqs_age_of_messages](https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/cloudwatch_metric_alarm) | resource |
+| [aws_cloudwatch_metric_alarm.sqs_number_of_messages](https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/cloudwatch_metric_alarm) | resource |
+| [aws_caller_identity.current](https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/data-sources/caller_identity) | data source |
+| [aws_region.current](https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/data-sources/region) | data source |
 
 ## Inputs
 
