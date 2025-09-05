@@ -1,9 +1,8 @@
 module "microservice" {
   source = "../"
 
-  prefix      = var.prefix
   environment = var.environment
-  app         = var.app
+  application = var.application
   namespace   = var.namespace
   ssm_secrets = var.ssm_secrets
   sqs_queues  = var.sqs_queues
@@ -14,7 +13,7 @@ module "microservice" {
       {
         "Effect" : "Allow",
         "Action" : ["ssm:*"],
-        "Resource" : ["arn:aws:ssm:${var.aws_region}:${data.aws_caller_identity.current.account_id}:parameter/${var.environment}/app/${var.app}/*"]
+        "Resource" : ["arn:aws:ssm:${var.aws_region}:${data.aws_caller_identity.current.account_id}:parameter/${var.environment}/app/${var.application}/*"]
       },
       {
         "Sid" : "SenderReceiver",

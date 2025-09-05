@@ -4,10 +4,10 @@ module "eks_pod_identity" {
 
   name            = local.name
   use_name_prefix = false
-  description     = "IAM role for EKS application - ${var.app}"
+  description     = "IAM role for EKS application - ${var.application}"
   association_defaults = {
     namespace       = var.namespace
-    service_account = var.app
+    service_account = var.application
   }
   associations = {
     "${local.cluster_name}" = {
@@ -15,7 +15,7 @@ module "eks_pod_identity" {
     }
   }
   attach_custom_policy      = true
-  custom_policy_description = "IAM role for EKS application - ${var.app}"
+  custom_policy_description = "IAM role for EKS application - ${var.application}"
   source_policy_documents   = [var.policy]
 
   tags = local.tags
@@ -29,7 +29,7 @@ module "ssm" {
 
   for_each = var.ssm_secrets
 
-  name  = format("/%s/app/%s/%s", var.environment, var.app, each.value.name)
+  name  = format("/%s/app/%s/%s", var.environment, var.application, each.value.name)
   tier  = try(each.value.tier, "Standard")
   type  = try(each.value.type, "SecureString")
   value = each.value.value

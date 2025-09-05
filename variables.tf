@@ -1,4 +1,4 @@
-variable "app" {
+variable "application" {
   type        = string
   description = "The name of the application"
   nullable    = false
@@ -13,12 +13,6 @@ variable "namespace" {
 variable "environment" {
   type        = string
   description = "The environment of the application"
-  nullable    = false
-}
-
-variable "prefix" {
-  type        = string
-  description = "The prefix of the application"
   nullable    = false
 }
 
