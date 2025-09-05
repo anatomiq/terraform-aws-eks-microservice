@@ -18,6 +18,22 @@ To destroy this example execute:
 $ terraform destroy
 ```
 
+# Creating a Release Tag for the Terraform Module
+
+To create a versioned release and push it to GitHub:
+
+```bash
+# 1. Make sure all changes are committed
+git add .
+git commit -m "feat: initial implementation of module"
+
+# 2. Create a version tag (e.g., v1.0.0)
+git tag -a v1.0.0 -m "Initial stable release"
+
+# 3. Push the tag to GitHub
+git push origin v1.0.0
+```
+
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
 
