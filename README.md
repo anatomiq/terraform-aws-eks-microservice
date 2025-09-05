@@ -32,6 +32,11 @@ git tag -a v1.0.0 -m "Initial stable release"
 
 # 3. Push the tag to GitHub
 git push origin v1.0.0
+
+# 4. Create a GitHub release for the tag (optional, via CLI)
+gh release create v1.0.0 \
+  --title "v1.0.0" \
+  --notes "Initial stable release of the Terraform module"
 ```
 
 <!-- BEGIN_TF_DOCS -->
