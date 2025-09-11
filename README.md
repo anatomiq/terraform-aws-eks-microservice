@@ -76,7 +76,7 @@ gh release create v1.0.0 \
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_application"></a> [application](#input\_application) | The name of the application | `string` | n/a | yes |
-| <a name="input_eks_cluster"></a> [eks\_cluster](#input\_eks\_cluster) | The name of the EKS cluster | `string` | `""` | no |
+| <a name="input_cluster_name"></a> [cluster\_name](#input\_cluster\_name) | The name of the EKS cluster | `string` | `""` | no |
 | <a name="input_environment"></a> [environment](#input\_environment) | The environment of the application | `string` | n/a | yes |
 | <a name="input_namespace"></a> [namespace](#input\_namespace) | The namespace of the application | `string` | n/a | yes |
 | <a name="input_policy"></a> [policy](#input\_policy) | The inline policy document | `string` | `""` | no |

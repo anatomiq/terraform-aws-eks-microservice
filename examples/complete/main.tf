@@ -6,7 +6,7 @@ module "microservice" {
   namespace      = var.namespace
   ssm_parameters = var.ssm_parameters
   sqs_queues     = var.sqs_queues
-  eks_cluster    = var.eks_cluster
+  cluster_name   = var.cluster_name
   policy = jsonencode({
     "Version" : "2012-10-17",
     "Statement" : [

@@ -10,8 +10,8 @@ module "eks_pod_identity" {
     service_account = var.application
   }
   associations = {
-    "${local.cluster_name}" = {
-      cluster_name = local.cluster_name
+    "${var.cluster_name}" = {
+      cluster_name = var.cluster_name
     }
   }
   attach_custom_policy      = true

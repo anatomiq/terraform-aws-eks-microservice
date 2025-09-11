@@ -1,6 +1,5 @@
 locals {
-  name         = format("%s-%s", var.environment, var.application)
-  cluster_name = var.eks_cluster
+  name = format("%s-%s", var.environment, var.application)
   tags = merge(
     var.tags,
     {
