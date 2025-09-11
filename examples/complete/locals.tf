@@ -1,7 +1,7 @@
 locals {
   tags = {
     environment = var.environment
-    app         = var.app
+    app         = var.application
     iac         = "terraform"
   }
 }

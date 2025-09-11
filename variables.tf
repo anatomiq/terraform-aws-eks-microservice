@@ -1,4 +1,4 @@
-variable "app" {
+variable "application" {
   type        = string
   description = "The name of the application"
   nullable    = false
@@ -16,13 +16,7 @@ variable "environment" {
   nullable    = false
 }
 
-variable "prefix" {
-  type        = string
-  description = "The prefix of the application"
-  nullable    = false
-}
-
-variable "ssm_parameters" {
+variable "ssm_secrets" {
   type = map(object({
     name                 = string
     tier                 = optional(string)
@@ -30,7 +24,7 @@ variable "ssm_parameters" {
     value                = string
     ignore_value_changes = bool
   }))
-  description = "The SSM parameters to create"
+  description = "The SSM secrets to create"
   default     = {}
 }
 

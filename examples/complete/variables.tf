@@ -4,12 +4,6 @@ variable "aws_region" {
   default     = "eu-central-1"
 }
 
-variable "prefix" {
-  type        = string
-  description = "The prefix of the application"
-  default     = "klp"
-}
-
 variable "environment" {
   type        = string
   description = "The environment of the application"
@@ -17,7 +11,7 @@ variable "environment" {
   default     = "sandbox"
 }
 
-variable "app" {
+variable "application" {
   type        = string
   description = "The name of the application"
   nullable    = false
