@@ -37,7 +37,7 @@ variable "tags" {
   default     = {}
 }
 
-variable "ssm_secrets" {
+variable "ssm_parameters" {
   type = map(object({
     name                 = string
     tier                 = optional(string)

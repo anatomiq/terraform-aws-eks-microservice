@@ -27,7 +27,7 @@ module "ssm" {
 
   ignore_value_changes = try(each.value.ignore_value_changes, true)
 
-  for_each = var.ssm_secrets
+  for_each = var.ssm_parameters
 
   name  = format("/%s/app/%s/%s", var.environment, var.app, each.value.name)
   tier  = try(each.value.tier, "Standard")

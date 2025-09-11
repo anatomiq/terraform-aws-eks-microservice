@@ -22,7 +22,7 @@ variable "prefix" {
   nullable    = false
 }
 
-variable "ssm_secrets" {
+variable "ssm_parameters" {
   type = map(object({
     name                 = string
     tier                 = optional(string)
@@ -30,7 +30,7 @@ variable "ssm_secrets" {
     value                = string
     ignore_value_changes = bool
   }))
-  description = "The SSM secrets to create"
+  description = "The SSM parameters to create"
   default     = {}
 }
 

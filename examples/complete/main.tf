@@ -1,13 +1,13 @@
 module "microservice" {
   source = "../"
 
-  prefix      = var.prefix
-  environment = var.environment
-  app         = var.app
-  namespace   = var.namespace
-  ssm_secrets = var.ssm_secrets
-  sqs_queues  = var.sqs_queues
-  eks_cluster = var.eks_cluster
+  prefix         = var.prefix
+  environment    = var.environment
+  app            = var.app
+  namespace      = var.namespace
+  ssm_parameters = var.ssm_parameters
+  sqs_queues     = var.sqs_queues
+  eks_cluster    = var.eks_cluster
   policy = jsonencode({
     "Version" : "2012-10-17",
     "Statement" : [
