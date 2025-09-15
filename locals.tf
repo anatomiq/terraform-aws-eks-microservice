@@ -1,5 +1,9 @@
 locals {
-  name = format("%s-%s", var.environment, var.application)
+  name = join("-", compact([
+    var.prefix,
+    var.environment,
+    var.application
+  ]))
   tags = merge(
     var.tags,
     {

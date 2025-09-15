@@ -4,6 +4,13 @@ variable "aws_region" {
   default     = "eu-central-1"
 }
 
+variable "prefix" {
+  type        = string
+  description = "(Optional) The prefix of the application"
+  nullable    = true
+  default     = "ex"
+}
+
 variable "environment" {
   type        = string
   description = "The environment of the application"

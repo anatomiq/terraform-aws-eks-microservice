@@ -1,6 +1,7 @@
 module "microservice" {
   source = "../../"
 
+  prefix         = var.prefix
   environment    = var.environment
   application    = var.application
   namespace      = var.namespace

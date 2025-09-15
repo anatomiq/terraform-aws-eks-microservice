@@ -1,3 +1,15 @@
+variable "prefix" {
+  type        = string
+  description = "(Optional) The prefix of the application"
+  nullable    = true
+}
+
+variable "environment" {
+  type        = string
+  description = "The environment of the application"
+  nullable    = false
+}
+
 variable "application" {
   type        = string
   description = "The name of the application"
@@ -7,12 +19,6 @@ variable "application" {
 variable "namespace" {
   type        = string
   description = "The namespace of the application"
-  nullable    = false
-}
-
-variable "environment" {
-  type        = string
-  description = "The environment of the application"
   nullable    = false
 }
 
