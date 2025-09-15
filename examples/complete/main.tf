@@ -1,5 +1,5 @@
 module "microservice" {
-  source = "../"
+  source = "../../"
 
   environment    = var.environment
   application    = var.application
