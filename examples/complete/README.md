@@ -1,6 +1,6 @@
 # Generic AWS EKS Microservice Example
 
-Configuration in this directory creates generic AWS EKS microservice resources - EKS Pod Identities, SSM parameters, SQS queues with KMS keys and CLoudWatch alarms.
+Configuration in this directory creates AWS EKS microservice resources - EKS Pod Identities, SSM parameters, SQS queues with KMS keys and CLoudWatch alarms.
 
 ## Usage
 
