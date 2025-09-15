@@ -45,13 +45,13 @@ gh release create v1.0.0 \
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | 1.12.2 |
-| <a name="requirement_aws"></a> [aws](#requirement\_aws) | 6.6.0 |
+| <a name="requirement_aws"></a> [aws](#requirement\_aws) | 6.12.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | 6.6.0 |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | 6.12.0 |
 
 ## Modules
 
@@ -66,10 +66,10 @@ gh release create v1.0.0 \
 
 | Name | Type |
 |------|------|
-| [aws_cloudwatch_metric_alarm.sqs_age_of_messages](https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/cloudwatch_metric_alarm) | resource |
-| [aws_cloudwatch_metric_alarm.sqs_number_of_messages](https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/cloudwatch_metric_alarm) | resource |
-| [aws_caller_identity.current](https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/data-sources/caller_identity) | data source |
-| [aws_region.current](https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/data-sources/region) | data source |
+| [aws_cloudwatch_metric_alarm.sqs_age_of_messages](https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/cloudwatch_metric_alarm) | resource |
+| [aws_cloudwatch_metric_alarm.sqs_number_of_messages](https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/cloudwatch_metric_alarm) | resource |
+| [aws_caller_identity.current](https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/data-sources/caller_identity) | data source |
+| [aws_region.current](https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/data-sources/region) | data source |
 
 ## Inputs
 
